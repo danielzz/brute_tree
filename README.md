@@ -106,7 +106,7 @@ An abstract class can be used for creating a BrueTreeNode instance class. See ex
 
 Alternatively, you can also use a generic API if you like Java generics.
 
-...
+```
 public class GenericBruteTreeNode<Rule extends ProblemRule<Problem>, Problem> extends AbstractBruteTreeNode
 
 public interface ProblemRule<Problem> {
@@ -114,6 +114,6 @@ public interface ProblemRule<Problem> {
     
     Collection<Problem> nextLevel(Problem problem);
 }
-...
+```
 
 This separates the rule of the problem and problem itself. You can read the test class for generic API for more details.
